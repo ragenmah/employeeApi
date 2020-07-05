@@ -74,7 +74,7 @@ class _EmployeeScreenState extends State<EmployeeScreen> {
           child: Container(
             height: 30,
             child: Text(
-              int.parse(employee[index].employeeSalary) > 345000
+              int.parse(employee[index].employeeSalary) == 345000
                   ? "${employee[index].employeeName} *"
                   : employee[index].employeeName,
               style: TextStyle(color: Colors.deepPurple, fontSize: 20),

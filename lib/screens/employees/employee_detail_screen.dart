@@ -8,7 +8,7 @@ class EmployeeDetailScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    String employeeName = int.parse(this.employee.employeeSalary) > 345000
+    String employeeName = int.parse(this.employee.employeeSalary) == 345000
         ? "${this.employee.employeeName} *"
         : this.employee.employeeName ?? 'No name';
     return Scaffold(
